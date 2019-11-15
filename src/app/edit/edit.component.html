@@ -1,0 +1,27 @@
+<form >
+    <a  routerLink="">Go to Home</a>
+    <br>
+    <legend>Add New Employee</legend>
+  
+    <div class="form-group">
+        <label for="No">No</label>
+        <input [(ngModel)]="emp.No" type="text" class="form-control" id="No" name="No">
+    </div>
+  
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input [(ngModel)]="emp.Name" type="text" class="form-control" id="Name" name="Name">
+    </div>
+  
+    <div class="form-group">
+        <label for="City">City</label>
+        <input [(ngModel)]="emp.City" type="text" class="form-control" id="City" name="City">
+    </div>
+  
+    <!-- <button type="submit" class="btn btn-primary">Add</button> -->
+    <button type="button" (click)="Update()" class="btn btn-primary">Update</button>
+    <span>
+        {{message}}
+    </span>
+  </form>
+  
